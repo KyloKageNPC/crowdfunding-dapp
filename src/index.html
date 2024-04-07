@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Helper-Mate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="metamask.css" />
+	<script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+	<script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+        <button id="create-btn">Create</button>
+      </nav>
+      <div id="form-container">
+        <form id="createCampaignForm">
+          <label for="owner">Owner:</label>
+          <input type="text" id="owner" name="owner" required />
+
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+
+          <label for="image">Image:</label>
+          <input type="text" id="image" name="image" required />
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+
+          <label for="threshold">Threshold:</label>
+          <input type="number" id="threshold" name="threshold" required />
+
+          <label for="target">Target:</label>
+          <input type="number" id="target" name="target" required />
+
+          <label for="deadline">Deadline:</label>
+          <input type="datetime-local" id="deadline" name="deadline" required />
+
+          <button type="submit" id="createCampaign">Create Campaign</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <h1>Helper-Mate</h1>
+      <p>Start your journey Now!!!</p>
+    </main>
+    
+  </body>
+</html>
